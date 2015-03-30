@@ -2863,6 +2863,8 @@ html[data-sap-ui-browser="ie8"] .sapUiUx3ShellCanvas {
 }
 .sapUiUx3TVHeaderContainer {
   padding: 0px 10px 5px 10px;
+  display: inline-block;
+  width: 250px;
 }
 .sapUiUx3TVHeaderContainer.sapUiUx3TVhorizontal {
   display: inline-block;
@@ -2922,6 +2924,7 @@ html[data-sap-ui-browser="ie8"] .sapUiUx3ShellCanvas {
   border: 1px solid #cccccc;
   border-radius: 6px;
   -moz-border-radius: 6px;
+  float: left;
 }
 .sapUiUx3TVIcon > IMG {
   width: 100%;
