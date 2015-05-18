@@ -555,7 +555,7 @@ html[data-sap-ui-browser="sf5"] .sapUiBtnS > .sapUiBtnTxt {
   width: 250%;
 }
 .sapUiCrslHorizontal .sapUiCrslItm {
-  display: inline-block !important;
+  display: inline-block;
   list-style: none;
   padding: 0 5px;
   vertical-align: bottom;
@@ -2434,6 +2434,8 @@ span.sapUiLblIco {
   color: #000000;
   font-family: Arial, Helvetica, sans-serif;
   font-size: 12px;
+  text-align: initial;
+  /* alignment should not be inherited */
 }
 .sapUiMltCell {
   -moz-box-sizing: border-box;
@@ -4382,6 +4384,8 @@ html[data-sap-ui-browser="ie8"] .sapUiTfInner.sapUiTf {
 }
 .sapUiTfFoc {
   background-color: #ffffff;
+  outline: none;
+  /* hide e.g. chrome focus outline */
 }
 .sapUiTfBrd.sapUiTfFoc {
   border-color: #007dc0;
@@ -7490,6 +7494,7 @@ html[data-sap-ui-browser='ie8'] .sapUiBtnS.sapUiBtnLite.sapUiBtnIconOnly.sapUiTo
 .sapUiTree {
   background-color: #f2f2f2;
   border: 2px solid #007dc0;
+  box-sizing: border-box;
 }
 .sapUiTreeTransparent {
   background-color: transparent;
