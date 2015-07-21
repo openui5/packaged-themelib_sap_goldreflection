@@ -5405,8 +5405,6 @@ html[data-sap-ui-browser="ie9"] .sapUiBtnS.sapUiBtnIconOnly > span.sapUiBtnIco,
 html[data-sap-ui-browser="ie10"] .sapUiBtnS.sapUiBtnIconOnly > span.sapUiBtnIco,
 html[data-sap-ui-browser="ie9"] .sapUiBtnS > span.sapUiBtnIco,
 html[data-sap-ui-browser="ie10"] .sapUiBtnS > span.sapUiBtnIco {
-  line-height: 17px;
-  padding-bottom: 1px;
   margin-top: 0;
 }
 /* ================================================== */
@@ -7437,6 +7435,10 @@ html[data-sap-ui-browser='ie8'] .sapUiBtnS.sapUiBtnLite.sapUiBtnIconOnly.sapUiTo
 .sapUiTbInner > label,
 .sapUiTbInnerRight > label {
   line-height: 22px;
+}
+html[data-sap-ui-browser="ie9"] .sapUiTbCont .sapUiBtn,
+html[data-sap-ui-browser="ie10"] .sapUiTbCont .sapUiBtn {
+  line-height: normal;
 }
 .sapUiTbStandalone .sapUiTbCont {
   border-color: transparent;
