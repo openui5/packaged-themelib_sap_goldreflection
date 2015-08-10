@@ -411,6 +411,7 @@
     "sapUiUx3ShellGradientTop": "#616467",
     "sapUiHeaderBGCrystal": "#007cc0",
     "sapUiNotficationTimestamp": "#aaaaaa",
+    "sapUiButtonActiveTextColor": "#ffffff",
     "sapUiButtonLiteTextColor": "#00669c",
     "sapUiToggleButtonHoverBorderColor": "#007dc0",
     "sapUiToggleButtonPressedBorderColor": "#00669c",

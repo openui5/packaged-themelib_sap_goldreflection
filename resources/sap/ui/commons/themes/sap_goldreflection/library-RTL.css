@@ -5749,6 +5749,51 @@ html[data-sap-ui-os^="iOS6"] .sapUiTfDsbl > .sapUiTfInner.sapUiTf[type="date"] {
 .sapUiFupGroup > div > div:last-child {
   padding-right: 4px;
 }
+.sapUiFup:hover .sapUiBtnS.sapUiBtnStdFocus {
+  background-color: #007dc0;
+}
+.sapUiFup:active .sapUiBtnS {
+  background-color: #666666;
+}
+.sapUiFup:active .sapUiBtnS.sapUiBtnNorm {
+  border-color: #333333;
+}
+.sapUiFup:hover .sapMBtnHoverable.sapMBtnAccept:not(.sapMBtnActive) {
+  background-color: #008a3b;
+  border-color: #000000;
+}
+.sapUiFup:active .sapMBtnHoverable.sapMBtnAccept:not(.sapMBtnActive) {
+  background-color: #007130;
+  border-color: #000000;
+}
+.sapUiFup:hover .sapMBtnHoverable.sapMBtnReject:not(.sapMBtnActive) {
+  background-color: #e52929;
+  border-color: #520a0a;
+}
+.sapUiFup:active .sapMBtnHoverable.sapMBtnReject:not(.sapMBtnActive) {
+  background-color: #da1a1a;
+  border-color: #520a0a;
+}
+.sapUiFup:hover .sapMBtnHoverable.sapMBtnEmphasized:not(.sapMBtnActive) {
+  background-color: #fdcd34;
+  border-color: #5b4501;
+}
+.sapUiFup:active .sapMBtnHoverable.sapMBtnEmphasized:not(.sapMBtnActive) {
+  background-color: #e8b102;
+  border-color: #5b4501;
+  text-shadow: none;
+}
+.sapUiFup:active .sapMBtnInner,
+.sapUiFup:active .sapMBtnTransparent.sapMBtnHoverable {
+  background-image: none;
+  background-color: #666666;
+  border-color: #333333;
+  color: #ffffff;
+  text-shadow: none;
+}
+.sapUiFup:active .sapMBtnInner .sapMBtnIcon {
+  color: #ffffff;
+}
 /* ======================================================== */
 /* CSS for control sap.ui.commons/HorizontalDivider.control */
 /* ======================================================== */
