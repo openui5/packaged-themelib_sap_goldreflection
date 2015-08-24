@@ -5697,6 +5697,7 @@ html[data-sap-ui-os^="iOS6"] .sapUiTfDsbl > .sapUiTfInner.sapUiTf[type="date"] {
 }
 .sapUiDlgHdrBtns > a {
   margin: 9px 0 0;
+  overflow: hidden;
 }
 .sapUiDlgCloseBtn {
   background-image: url(img-RTL/dlg-close.png);
