@@ -611,12 +611,16 @@ button.sapUiBtnS.sapUiBtnNorm.sapUiUx3EditCollectionButton.sapUiBtnStd:hover {
   position: absolute;
   bottom: 0;
   top: 25px;
-  right: 0;
+  begin: 0;
   width: 168px;
   border: 1px solid #cccccc;
   box-sizing: border-box;
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
+}
+html[data-sap-ui-browser^="ed"] .sapUiUx3ExactLstLst,
+html[data-sap-ui-browser^="ie"] .sapUiUx3ExactLstLst {
+  right: 0;
 }
 .sapUiUx3ExactLstLst.sapUiUx3ExactLstExpandedBL {
   bottom: auto;
