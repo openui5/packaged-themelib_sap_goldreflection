@@ -338,6 +338,8 @@
     "sapUiTableColHdrHeight": "28px",
     "sapUiTableRowHdrWidth": "22px",
     "sapUiTableToolbarDesign": "Transparent",
+    "sapUiTableCozyRowHdrWidth": "3rem",
+    "sapUiTableCozyRowHdrHeight": "3rem",
     "sapFontFamily": "Arial, Helvetica, sans-serif, Verdana",
     "sapFontSize": "0.75em",
     "sapContent_LineHeight": "1.3",
