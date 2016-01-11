@@ -1,11 +1,11 @@
 /*!
  * UI development toolkit for HTML5 (OpenUI5)
- * (c) Copyright 2009-2015 SAP SE or an SAP affiliate company.
+ * (c) Copyright 2009-2016 SAP SE or an SAP affiliate company.
  * Licensed under the Apache License, Version 2.0 - see LICENSE.txt.
  */
 /*!
  * UI development toolkit for HTML5 (OpenUI5)
- * (c) Copyright 2009-2015 SAP SE or an SAP affiliate company.
+ * (c) Copyright 2009-2016 SAP SE or an SAP affiliate company.
  * Licensed under the Apache License, Version 2.0 - see LICENSE.txt.
  */
 /* Global CSS for 'base' theme */
@@ -13,11 +13,11 @@
 /* TMP during LESS convertion ---- to be deleted */
 /* may be required by SubstitutionRulesManager.css in inbox lib */
 /* ---------------------------------------------------------------------------------------- */
-/** 
+/**
   * This parameter is used in the Shell control to calculate the size when it grows.
-  * !!! ONLY PX-VALUES ARE ALLOWED HERE. 
+  * !!! ONLY PX-VALUES ARE ALLOWED HERE.
   */
-/** 
+/**
   * This parameter is used in the Shell control to calculate the size of the margin when showing
   * an overflow button in the right pane. As of 1.18.0 this value contains the _maximum_ height
   * of the overflow button, if the text inside the button is smaller, the button shrinks with it.
@@ -34,20 +34,20 @@
 /*make small margin themable*/
 /*make medium margin themable*/
 /*make large margin themable*/
-/* 
+/*
  * This is a mixin for creating the predefined container content padding
  * classes:
  * sapUiNoContainerContentPadding
  * sapUiContainerContentPadding
  * sapUiResponsiveContainerContentPadding
- * These classes can be set on many UI5 containers and will 
- * add padding inside the container's content padding based 
+ * These classes can be set on many UI5 containers and will
+ * add padding inside the container's content padding based
  * on the selectors that are arguments for this mixin.
  *
  * Arguments to this function-like mixin are the rootClass selector and
  * the content selector where the padding should be applied.
  */
-/* 
+/*
   * the sapLess-parser has problems with an escaped string as default value for the parameterized mixin
   * therefore we need to temporarily use a parameter assigning the default value
   */
@@ -1482,51 +1482,41 @@ HTML[data-sap-ui-browser='ie8'] .sapUiBarToggle {
   background-repeat: no-repeat;
   height: 16px;
   background-position: center center;
+  font-family: 'SAP-icons';
+  color: white;
+  font-size: 16px;
+  opacity: 0.5;
+  text-align: center;
 }
 .sapUiBarToggleItem:hover,
 .sapUiBarToggleItem:active {
   background-color: #007dc0;
+  opacity: 1;
 }
 /* Enlarge Arrow */
-.sapUiBarToggleArrowUp {
-  background-image: url("img-RTL/notification_bar/arrows/DoubleArrow_up.png");
+.sapUiBarToggleArrowUp::before {
+  content: "\e200";
 }
-.sapUiBarToggleArrowUp:hover,
-.sapUiBarToggleArrowUp:active {
-  background-image: url("img-RTL/notification_bar/arrows/DoubleArrow_up_hover.png");
+/* Minimize Arrow */
+.sapUiBarToggleArrowDown::before {
+  content: "\e1f9";
+}
+/* BarUp */
+.sapUiBarToggleBarUp::before {
+  content: "\e1e9";
+}
+/* BarDown */
+.sapUiBarToggleBarDown::before {
+  content: "\e1ea";
 }
 .sapUiBarToggleArrowUp.sapUiBarToggleHide {
   display: none;
 }
-/* Minimize Arrow */
-.sapUiBarToggleArrowDown {
-  background-image: url("img-RTL/notification_bar/arrows/DoubleArrow_down.png");
-}
-.sapUiBarToggleArrowDown:hover,
-.sapUiBarToggleArrowDown:active {
-  background-image: url("img-RTL/notification_bar/arrows/DoubleArrow_down_hover.png");
-}
 .sapUiBarToggleArrowDown.sapUiBarToggleHide {
   display: none;
 }
-/* BarUp */
-.sapUiBarToggleBarUp {
-  background-image: url("img-RTL/notification_bar/arrows/ArrowBar_up.png");
-}
-.sapUiBarToggleBarUp:hover,
-.sapUiBarToggleBarUp:active {
-  background-image: url("img-RTL/notification_bar/arrows/ArrowBar_up_hover.png");
-}
 .sapUiBarToggleBarUp.sapUiBarToggleHide {
   display: none;
-}
-/* BarDown */
-.sapUiBarToggleBarDown {
-  background-image: url("img-RTL/notification_bar/arrows/ArrowBar_down.png");
-}
-.sapUiBarToggleBarDown:hover,
-.sapUiBarToggleBarDown:active {
-  background-image: url("img-RTL/notification_bar/arrows/ArrowBar_down_hover.png");
 }
 .sapUiBarToggleBarDown.sapUiBarToggleHide {
   display: none;
@@ -1537,7 +1527,7 @@ HTML[data-sap-ui-browser='ie8'] .sapUiBarToggle {
   height: inherit;
 }
 .sapUiNotifier {
-  /* this is needed to show the Notifier's icon on tablets. Otherwise the icon would be only visible if 
+  /* this is needed to show the Notifier's icon on tablets. Otherwise the icon would be only visible if
 	the windows i.e. */
   -webkit-transform: translate3d(0, 0, 0);
   display: inline-block;
@@ -1557,17 +1547,21 @@ HTML[data-sap-ui-browser='ie8'] .sapUiBarToggle {
 .sapUiNotifier:focus {
   background-color: #007dc0;
 }
-.sapUiNotifier img {
+.sapUiNotifier img,
+.sapUiNotifier .sapUiIcon {
   position: relative;
   top: 8px;
   right: 8px;
   opacity: 0.75;
+  font-size: 22px;
+  cursor: pointer;
 }
-.sapUiNotifier:hover img {
+.sapUiNotifier:hover img,
+.sapUiNotifier:hover .sapUiIcon {
   opacity: 1;
 }
 .sapUiNotifierSeparator {
-  /* this is needed to show the Notifier's icon on tablets. Otherwise the icon would be only visible if 
+  /* this is needed to show the Notifier's icon on tablets. Otherwise the icon would be only visible if
 	the windows i.e. */
   -webkit-transform: translate3d(0, 0, 0);
   display: inline-block;
@@ -3955,7 +3949,7 @@ html[data-sap-ui-browser="ie9"] .sapUiUx3ShellHeader {
   background-size: auto;
   /* IE9 does understand background-size, but it is meant for the gradient which it does not understand... */
 }
-/* fading does not look too great 
+/* fading does not look too great
 .sapUiUx3ShellHeader.sapUiUx3ShellHeaderFadeout {
 	background-image: -moz-linear-gradient(top center, #606366, #525557 30px, rgba(80,83,85, 0) 35px, #2C2C2C);
   background-image: -webkit-gradient(linear, left top, left bottom, from(#606366), to(#2C2C2C));
