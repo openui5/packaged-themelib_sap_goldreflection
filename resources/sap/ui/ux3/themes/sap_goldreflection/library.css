@@ -3887,6 +3887,9 @@ html[data-sap-ui-browser="ie9"] .sapUiFeeder .sapUiBtnS.sapUiBtnIconOnly > span.
 /* ================================================== */
 /* TODO this is just a hack to ship this with 1.14.0 */
 /* Per default the overriding of the less-parameter through the global.css in GF does not work somehow */
+.sapUiNotifier .sapUiIcon {
+  color: #f2f2f2;
+}
 /* ========================================== */
 /* CSS for control sap.ui.ux3/Overlay.control */
 /* ========================================== */
