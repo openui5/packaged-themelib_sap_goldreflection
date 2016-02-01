@@ -1967,30 +1967,35 @@ li.sapUiInPlaceMessage > div.sapUiNotifierMessageText:focus {
   background-color: #cccccc;
   border: none;
 }
-.sapUiUx3ShellHeader > img {
+.sapUiUx3ShellHeader > .sapUiUx3ShellHeaderTitleLeft {
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding-top: 3px;
+}
+.sapUiUx3ShellHeader > .sapUiUx3ShellHeaderTitleLeft > span {
+  font-size: 0.75rem;
+  font-weight: bold;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+}
+.sapUiUx3ShellHeader > .sapUiUx3ShellHeaderTitleLeft > img {
   /* the logo image */
   vertical-align: top;
   max-height: 18px;
   margin-left: 3px;
+  margin-top: -3px;
   -moz-user-select: none;
   -webkit-user-select: none;
   user-select: none;
 }
-.sapUiUx3ShellHeader.sapUiUx3ShellHeaderFlex > img {
+.sapUiUx3ShellHeader.sapUiUx3ShellHeaderFlex > .sapUiUx3ShellHeaderTitleLeft > img {
   max-height: 40px;
 }
-.sapUiUx3ShellHeader > h1 {
-  font-size: 12px;
-  display: inline-block;
-  margin: 0;
-  -moz-user-select: none;
-  -webkit-user-select: none;
-  user-select: none;
-}
 .sapUiUx3ShellHeader .sapUiUx3ShellHeaderTitleRight {
-  position: absolute;
-  left: 20px;
-  font-weight: normal;
+  float: left;
 }
 .sapUiUx3ShellBlockHeaderAccess .sapUiUx3ShellHeaderTitleRight {
   display: none;
@@ -2398,7 +2403,7 @@ html[data-sap-ui-browser="ie8"] .sapUiUx3ShellCanvas {
   height: 8px;
   padding: 0;
 }
-.sapUiUx3Shell.sapUiUx3ShellHeadBrandOnly > .sapUiUx3ShellHeader > img,
+.sapUiUx3Shell.sapUiUx3ShellHeadBrandOnly > .sapUiUx3ShellHeader > span > img,
 .sapUiUx3Shell.sapUiUx3ShellHeadBrandOnly > .sapUiUx3ShellHeader > h1,
 .sapUiUx3Shell.sapUiUx3ShellHeadBrandOnly > .sapUiUx3ShellHeader > span,
 .sapUiUx3Shell.sapUiUx3ShellHeadBrandOnly > .sapUiUx3ShellWorksetBar,
@@ -3184,6 +3189,7 @@ html[dir=rtl] .sapUiUx3TPBtnRow {
 /* Crystal Blue value set by UX: */
 /* NotificationBar */
 /* The maximized height will be calculated corresponding to the window's height.*/
+/* ToolPopup */
 /* transparent; */
 /* This CSS shares it rules with all other CSS of this library */
 /* ============================================= */
@@ -3946,7 +3952,7 @@ html[data-sap-ui-browser="ie9"] .sapUiFeeder .sapUiBtnS.sapUiBtnIconOnly > span.
   /* starting with IE10 this works in IE */
   background-image: linear-gradient(top, #616467 0, #2c2c2c 108px, #2c2c2c);
   background-position: right top;
-  padding: 9px 20px 0;
+  padding: 9px 20px 0 0;
 }
 html[data-sap-ui-browser="ie7"] .sapUiUx3ShellHeader,
 html[data-sap-ui-browser="ie8"] .sapUiUx3ShellHeader,
@@ -3970,9 +3976,11 @@ html[data-sap-ui-browser="ie9"] .sapUiUx3ShellHeader {
   box-shadow: 0 0 5px #111;
   /* does not work, using the image... filter: Shadow(Color=#000, Direction=135, Strength=2);       */
 }
-.sapUiUx3ShellHeader > img,
-.sapUiUx3ShellHeader > h1 {
-  margin-top: 3px;
+.sapUiUx3ShellHeader > .sapUiUx3ShellHeaderTitleLeft {
+  padding-top: 2px;
+}
+.sapUiUx3ShellHeader > .sapUiUx3ShellHeaderTitleLeft > img {
+  margin-top: 1px;
 }
 .sapUiUx3ShellHeader .sapUiBtn,
 .sapUiUx3ShellHeader .sapUiLnk {
