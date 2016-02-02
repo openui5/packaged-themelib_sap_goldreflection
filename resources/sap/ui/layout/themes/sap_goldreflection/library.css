@@ -2734,13 +2734,13 @@ html[dir=rtl][data-sap-ui-browser^=ed] .sapUiGrid td > .sapUiFormTitle {
   /* because fields have 0.25rem padding on left and right */
   box-sizing: border-box;
 }
-.sapUiRGLContainerCont {
-  padding-bottom: 2rem;
-}
 .sapUiRGLContainerColl > .sapUiRGLContainerCont {
   display: none;
 }
 /* add paddings to content */
+.sapUiFormResGridCont {
+  padding-bottom: 2rem;
+}
 .sapUiFormResGridCont > div {
   padding: 0 0.25rem 0.5rem 0.25rem;
   box-sizing: border-box;
@@ -2759,7 +2759,7 @@ html[dir=rtl][data-sap-ui-browser^=ed] .sapUiGrid td > .sapUiFormTitle {
 /* ================= */
 /*   SMALL DEVICES   */
 /* ================= */
-.sap-phone .sapUiRGLContainerCont {
+.sap-phone .sapUiFormResGridCont {
   /* on real phones use smaller space between containers */
   padding-bottom: 1rem;
 }
@@ -2839,10 +2839,10 @@ html[data-sap-ui-browser^="ff"].sapUiSizeCompact .sapUiFormEdit.sapUiFormM .sapU
   padding-top: 0.4375rem;
 }
 /* on last row no padding-bottom on container content */
-.sapUiRespGridMedia-Std-Phone > .sapUiFormResGridLastRowM:last-child > .sapUiRGLContainer > .sapUiRGLContainerCont,
-.sapUiRespGridMedia-Std-Tablet > .sapUiFormResGridLastRowM > .sapUiRGLContainer > .sapUiRGLContainerCont,
-.sapUiRespGridMedia-Std-Desktop > .sapUiFormResGridLastRowL > .sapUiRGLContainer > .sapUiRGLContainerCont,
-.sapUiRespGridMedia-Std-LargeDesktop > .sapUiFormResGridLastRowXL > .sapUiRGLContainer > .sapUiRGLContainerCont {
+.sapUiRespGridMedia-Std-Phone > .sapUiFormResGridLastRowM:last-child .sapUiFormResGridCont,
+.sapUiRespGridMedia-Std-Tablet > .sapUiFormResGridLastRowM .sapUiFormResGridCont,
+.sapUiRespGridMedia-Std-Desktop > .sapUiFormResGridLastRowL .sapUiFormResGridCont,
+.sapUiRespGridMedia-Std-LargeDesktop > .sapUiFormResGridLastRowXL .sapUiFormResGridCont {
   padding-bottom: 0;
 }
 /* In Cozy mode put first FormContainers with title or toolbar 0.5rem on top */
@@ -3329,6 +3329,7 @@ html[data-sap-ui-browser^="ie"] .sapUiVlt {
 /* Crystal Blue value set by UX: */
 /* NotificationBar */
 /* The maximized height will be calculated corresponding to the window's height.*/
+/* ToolPopup */
 /* transparent; */
 /* =============================================== */
 /* CSS for control sap.ui.layout/form/Form.control */
@@ -3372,6 +3373,10 @@ html[data-sap-ui-browser="ie9"] .sapUiFormTitle > .sapUiBtnS.sapUiBtnLite.sapUiB
 .sapUiGrid td:first-child {
   padding-left: 0;
 }
+.sapUiGrid > tbody > tr.sapUiGridTitle > th,
+.sapUiGrid > tbody > tr.sapUiGridConteinerFirstRow > td {
+  padding-top: 20px;
+}
 .sapUiGrid .sapUiGridHeader {
   padding: 0;
 }
@@ -3379,7 +3384,6 @@ html[data-sap-ui-browser="ie9"] .sapUiFormTitle > .sapUiBtnS.sapUiBtnLite.sapUiB
 .sapUiGrid td > .sapUiFormTitle {
   text-transform: uppercase;
   margin-bottom: 2px;
-  margin-top: 20px;
   padding-bottom: 5px;
 }
 .sapUiGridSpace {
