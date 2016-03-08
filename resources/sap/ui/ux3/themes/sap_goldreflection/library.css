@@ -1416,8 +1416,12 @@ html[data-sap-ui-browser*="ie"] .sapUiUx3NavBarItemSel > a {
 .sapUiNotiHover {
   position: absolute;
   height: 40px;
+  /* IE workaround to detect bar hovering in Min mode */
+  background-color: inherit;
+  opacity: 0;
 }
 .sapUiNotiHover:hover .sapUiBarToggle,
+.sapUiNotiHover:hover + .sapUiBarToggle,
 .sapUiNotificationBar:hover .sapUiBarToggle {
   display: block;
 }
