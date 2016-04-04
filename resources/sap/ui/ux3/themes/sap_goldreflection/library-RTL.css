@@ -1866,6 +1866,7 @@ li.sapUiInPlaceMessage > div.sapUiNotifierMessageText:focus {
 /* ============================================= */
 /* CSS for sap.ui.ux3.Shell.control (base theme) */
 /* ============================================= */
+/* Define function to make user-select consistent across browsers */
 .sapUiUx3Shell {
   margin: 0;
   padding: 0;
@@ -1873,9 +1874,14 @@ li.sapUiInPlaceMessage > div.sapUiNotifierMessageText:focus {
   font-family: Arial, Helvetica, sans-serif;
   width: 100%;
   overflow-x: hidden;
-  -moz-user-select: none;
   -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
   user-select: none;
+  /* Likely future */
 }
 .sapUiUx3ShellHeader {
   cursor: default;
@@ -1920,9 +1926,14 @@ li.sapUiInPlaceMessage > div.sapUiNotifierMessageText:focus {
 .sapUiUx3ShellHeader > .sapUiUx3ShellHeaderTitleLeft > span {
   font-size: 0.75rem;
   font-weight: bold;
-  -moz-user-select: none;
   -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
   user-select: none;
+  /* Likely future */
 }
 .sapUiUx3ShellHeader > .sapUiUx3ShellHeaderTitleLeft > img {
   /* the logo image */
@@ -1930,9 +1941,14 @@ li.sapUiInPlaceMessage > div.sapUiNotifierMessageText:focus {
   max-height: 18px;
   margin-left: 3px;
   margin-top: -3px;
-  -moz-user-select: none;
   -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
   user-select: none;
+  /* Likely future */
 }
 .sapUiUx3ShellHeader.sapUiUx3ShellHeaderFlex > .sapUiUx3ShellHeaderTitleLeft > img {
   max-height: 40px;
@@ -2005,9 +2021,14 @@ li.sapUiInPlaceMessage > div.sapUiNotifierMessageText:focus {
   background-position: left top;
   padding-top: 12px;
   line-height: 1px;
-  -moz-user-select: none;
   -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
   user-select: none;
+  /* Likely future */
   z-index: 1;
   /* must be in front of the right-hand side Pane, otherwise that one will overlap when the window is very narrow */
 }
@@ -2116,9 +2137,14 @@ html[data-sap-ui-browser^="ff"] .sapUiUx3ShellToolFontIcon {
   display: inline-block;
   height: 100%;
   box-sizing: border-box;
-  -moz-user-select: none;
   -webkit-user-select: none;
+  /* Chrome all / Safari all */
+  -moz-user-select: none;
+  /* Firefox all */
+  -ms-user-select: none;
+  /* IE 10+ */
   user-select: none;
+  /* Likely future */
 }
 /** Overflow button and menu**/
 .sapUiUx3ShellPaneBarRight > .sapUiUx3ShellPaneOverflowButton {
@@ -2234,8 +2260,14 @@ html[data-sap-ui-browser^="ff"] .sapUiUx3ShellToolFontIcon {
   overflow: auto;
   box-sizing: border-box;
   border-left: 2px solid #cccccc;
-  -moz-user-select: auto;
-  -webkit-user-select: auto;
+  -webkit-user-select: text;
+  /* Chrome all / Safari all */
+  -moz-user-select: text;
+  /* Firefox all */
+  -ms-user-select: text;
+  /* IE 10+ */
+  user-select: text;
+  /* Likely future */
 }
 .sapUiUx3ShellPaneBarOpen .sapUiUx3ShellPaneBarContent {
   display: inline-block;
@@ -2267,8 +2299,14 @@ html[data-sap-ui-browser^="ff"] .sapUiUx3ShellToolFontIcon {
   width: 100%;
   -webkit-overflow-scrolling: touch;
   overflow-x: auto;
-  -moz-user-select: auto;
-  -webkit-user-select: auto;
+  -webkit-user-select: text;
+  /* Chrome all / Safari all */
+  -moz-user-select: text;
+  /* Firefox all */
+  -ms-user-select: text;
+  /* IE 10+ */
+  user-select: text;
+  /* Likely future */
 }
 .sapUiUx3ShellFullHeightContent .sapUiUx3ShellContent {
   bottom: 0;
