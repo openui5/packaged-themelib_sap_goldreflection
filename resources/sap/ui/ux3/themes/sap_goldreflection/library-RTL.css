@@ -84,20 +84,20 @@ button.sapUiUx3ActionBarLiteMoreButton:focus > span.sapUiBtnTxt {
 /* ============================================= */
 /* Update                                        */
 .sapUiUx3ActionBarUpdateAction {
-  background-image: url("img-RTL/update_regular.png");
+  background-image: url("../base/img-RTL/update_regular.png");
   background-repeat: no-repeat;
   background-position: center center;
 }
 .sapUiUx3ActionBarUpdateAction:hover {
-  background-image: url("img-RTL/update_hover.png");
+  background-image: url("../base/img-RTL/update_hover.png");
   background-color: #007dc0;
 }
 .sapUiUx3ActionBarUpdateAction:focus {
-  background-image: url("img-RTL/update_hover.png");
+  background-image: url("../base/img-RTL/update_hover.png");
   background-color: #007dc0;
 }
 .sapUiUx3ActionBarUpdateAction.Selected {
-  background-image: url("img-RTL/update_hover.png");
+  background-image: url("../base/img-RTL/update_hover.png");
   background-color: #005c8d;
 }
 .sapUiUx3ActionBarUpdateAction.Selected:hover {
@@ -123,13 +123,13 @@ button.sapUiUx3ActionBarLiteMoreButton:focus > span.sapUiBtnTxt {
   background-position: center center;
 }
 .sapUiUx3ActionBarFollowAction.Default {
-  background-image: url("img-RTL/not_following_regular.png");
+  background-image: url("../base/img-RTL/not_following_regular.png");
 }
 .sapUiUx3ActionBarFollowAction.Default:hover {
   border: 1px solid #007dc0;
 }
 .sapUiUx3ActionBarFollowAction.Default:active {
-  background-image: url("img-RTL/not_following_hover.png");
+  background-image: url("../base/img-RTL/not_following_hover.png");
   background-color: #666666;
 }
 .sapUiUx3ActionBarFollowAction.Default:focus {
@@ -139,7 +139,7 @@ button.sapUiUx3ActionBarLiteMoreButton:focus > span.sapUiBtnTxt {
   opacity: 0.25;
 }
 .sapUiUx3ActionBarFollowAction.Follow {
-  background-image: url("img-RTL/following_hover.png");
+  background-image: url("../base/img-RTL/following_hover.png");
   background-color: #0091df;
 }
 .sapUiUx3ActionBarFollowAction.Follow:hover {
@@ -152,7 +152,7 @@ button.sapUiUx3ActionBarLiteMoreButton:focus > span.sapUiBtnTxt {
   background-color: #666666;
 }
 .sapUiUx3ActionBarFollowAction.Hold {
-  background-image: url("img-RTL/hold_hover.png");
+  background-image: url("../base/img-RTL/hold_hover.png");
   background-color: #0091df;
 }
 .sapUiUx3ActionBarFollowAction.Hold:hover {
@@ -167,7 +167,7 @@ button.sapUiUx3ActionBarLiteMoreButton:focus > span.sapUiBtnTxt {
 /* ============================================= */
 /* Flag                                     */
 .sapUiUx3ActionBarFlagAction {
-  background-image: url("img-RTL/flag_regular.png");
+  background-image: url("../base/img-RTL/flag_regular.png");
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -181,11 +181,11 @@ button.sapUiUx3ActionBarLiteMoreButton:focus > span.sapUiBtnTxt {
   border: 1px solid #cc0000;
 }
 .sapUiUx3ActionBarFlagAction:active {
-  background-image: url("img-RTL/flag_hover.png");
+  background-image: url("../base/img-RTL/flag_hover.png");
   background-color: #666666;
 }
 .sapUiUx3ActionBarFlagAction.Selected {
-  background-image: url("img-RTL/flag_hover.png");
+  background-image: url("../base/img-RTL/flag_hover.png");
   background-color: #990000;
 }
 .sapUiUx3ActionBarFlagAction.Selected:hover {
@@ -200,7 +200,7 @@ button.sapUiUx3ActionBarLiteMoreButton:focus > span.sapUiBtnTxt {
 /* ============================================= */
 /* Favorite                                     */
 .sapUiUx3ActionBarFavoriteAction {
-  background-image: url("img-RTL/favorite_regular.png");
+  background-image: url("../base/img-RTL/favorite_regular.png");
   background-repeat: no-repeat;
   background-position: center center;
 }
@@ -214,11 +214,11 @@ button.sapUiUx3ActionBarLiteMoreButton:focus > span.sapUiBtnTxt {
   border: 1px solid #f05c00;
 }
 .sapUiUx3ActionBarFavoriteAction:active {
-  background-image: url("img-RTL/favorite_hover.png");
+  background-image: url("../base/img-RTL/favorite_hover.png");
   background-color: #666666;
 }
 .sapUiUx3ActionBarFavoriteAction.Selected {
-  background-image: url("img-RTL/favorite_hover.png");
+  background-image: url("../base/img-RTL/favorite_hover.png");
   background-color: #f05c00;
 }
 .sapUiUx3ActionBarFavoriteAction.Selected:hover {
@@ -233,31 +233,31 @@ button.sapUiUx3ActionBarLiteMoreButton:focus > span.sapUiBtnTxt {
 /* ============================================= */
 /* Open Thing                                    */
 .sapUiUx3ActionBarOpenThingAction {
-  background-image: url("img-RTL/inspect_regular.png");
+  background-image: url("../base/img-RTL/inspect_regular.png");
   background-repeat: no-repeat;
   background-position: center center;
 }
 .sapUiUx3ActionBarOpenThingAction:hover {
-  background-image: url("img-RTL/inspect_hover.png");
+  background-image: url("../base/img-RTL/inspect_hover.png");
   background-color: #007dc0;
 }
 .sapUiUx3ActionBarOpenThingAction:focus {
-  background-image: url("img-RTL/inspect_hover.png");
+  background-image: url("../base/img-RTL/inspect_hover.png");
   background-color: #007dc0;
 }
 /* ============================================= */
 /* Other Actions                                 */
 .sapUiUx3ActionBarToolsAction {
-  background-image: url("img-RTL/tools_regular.png");
+  background-image: url("../base/img-RTL/tools_regular.png");
   background-repeat: no-repeat;
   background-position: center center;
 }
 .sapUiUx3ActionBarToolsAction:hover {
-  background-image: url("img-RTL/tools_hover.png");
+  background-image: url("../base/img-RTL/tools_hover.png");
   background-color: #007dc0;
 }
 .sapUiUx3ActionBarToolsAction:focus {
-  background-image: url("img-RTL/tools_hover.png");
+  background-image: url("../base/img-RTL/tools_hover.png");
   background-color: #007dc0;
 }
 /* ====================================================== */
@@ -1691,7 +1691,7 @@ li.sapUiInPlaceMessage > div.sapUiNotifierMessageText:focus {
   border: 1px solid #333333;
 }
 .sapUiUx3OverlayCloseButton {
-  background: url("img-RTL/close.png");
+  background: url("../base/img-RTL/close.png");
   position: absolute;
   left: 20px;
   top: 20px;
@@ -1701,13 +1701,13 @@ li.sapUiInPlaceMessage > div.sapUiNotifierMessageText:focus {
   z-index: 99;
 }
 .sapUiUx3OverlayCloseButton:hover {
-  background: url("img-RTL/close_hover.png");
+  background: url("../base/img-RTL/close_hover.png");
 }
 .sapUiUx3OverlayCloseButton:focus {
-  background: url("img-RTL/close_hover.png");
+  background: url("../base/img-RTL/close_hover.png");
 }
 .sapUiUx3OverlayOpenButton {
-  background: url("img-RTL/open_in_new_window_hover.png");
+  background: url("../base/img-RTL/open_in_new_window_hover.png");
   background-repeat: no-repeat;
   background-position: left center;
   padding-left: 22px;
@@ -2409,7 +2409,7 @@ html[data-sap-ui-browser^="ff"] .sapUiUx3ShellToolFontIcon {
   width: 12px;
   height: 12px;
   margin: -10px -10px 0 0;
-  background-image: url(img-RTL/color-marker.png);
+  background-image: url(../base/img-RTL/color-marker.png);
 }
 .sapUiUx3ShellColorPickerGradient {
   height: 8px;
