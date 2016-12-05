@@ -497,6 +497,9 @@ html[dir=rtl] .sapUiIconMirrorInRTL:not(.sapUiIconSuppressMirrorInRTL):after {
 #sapUiBusyIndicator {
   left: 0px;
 }
+#sapUiBusyIndicator > .sapUiLocalBusyIndicatorFade {
+  cursor: wait;
+}
 /**
  * Keyframe definitions
  */
@@ -913,6 +916,9 @@ Usage:
 }
 #sapUiBusyIndicator .sapUiLocalBusyIndicator {
   display: none !important;
+}
+#sapUiBusyIndicator {
+  cursor: wait;
 }
 .sapUiBly {
   background-color: #000000;
