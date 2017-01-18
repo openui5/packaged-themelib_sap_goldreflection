@@ -116,5 +116,27 @@
         "references": []
       }
     ]
+  },
+  "1.38.12": {
+    "date": "December 2016",
+    "notes": [
+      {
+        "id": "5e68da248f59ccb84f85dd8a2214b2e1783c9791",
+        "type": "FIX",
+        "text": " BusyIndicator (Global): Fix missing wait cursor",
+        "references": []
+      }
+    ]
+  },
+  "1.38.16": {
+    "date": "December 2016",
+    "notes": [
+      {
+        "id": "5a429ab97eed6504084bb6bf19c6c29582f18375",
+        "type": "FIX",
+        "text": " sap.ui.table.Table: Remove top and bottom padding of an inbox task icon in a table cell in the Gold Reflection theme to ensure the default row height.",
+        "references": []
+      }
+    ]
   }
 }
